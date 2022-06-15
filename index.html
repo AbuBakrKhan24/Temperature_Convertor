@@ -8,14 +8,17 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="container">
+    
+   <header>
       <h1>Temperature Convertor</h1>
       <p>
         This is a Temperature Convertor, use this to convert your current
         temperature with this convertor.
       </p>
-
+    </header>
+      <!-- Celsius -->
       <form action="none" method="post" name="temp_info">
+        <div class="container" name="temp_info">
         <h3>Celcius to Fahrenheit</h3>
         <label for="Celcius">Celsius:</label>
         <input type="text" name="Celcius" />
@@ -31,7 +34,10 @@
         <h4>Here is your conversion :</h4>
         <label for="Temperature" id="Temperature_label">Results :</label>
         <input type="text" name="Temperature1" id="Temperature1" />
-        <hr />
+        
+    </div>
+  <!-- Fahrenheit  -->
+        <div class="container">
         <h3>Fahrenheit to Celcius</h3>
         <label for="Fahrenheit">Fahrenheit :</label>
         <input type="text" name="Fahrenheit" />
@@ -50,5 +56,9 @@
       </form>
     </div>
     <script src="./index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/edecc44186.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
