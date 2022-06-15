@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Convertor</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Temperature Convertor</h1>
+      <p>
+        This is a Temperature Convertor, use this to convert your current
+        temperature with this convertor.
+      </p>
+
+      <form action="none" method="post" name="temp_info">
+        <h3>Celcius to Fahrenheit</h3>
+        <label for="Celcius">Celsius:</label>
+        <input type="text" name="Celcius" />
+        <button
+          type="button"
+          name="calculate"
+          value="Convert"
+          onclick="CelciusToFahremheit()"
+        >
+          Convert
+        </button>
+
+        <h4>Here is your conversion :</h4>
+        <label for="Temperature" id="Temperature_label">Results :</label>
+        <input type="text" name="Temperature1" id="Temperature1" />
+        <hr />
+        <h3>Fahrenheit to Celcius</h3>
+        <label for="Fahrenheit">Fahrenheit :</label>
+        <input type="text" name="Fahrenheit" />
+        <button
+          type="button"
+          name="calculate"
+          value="Convert"
+          onclick="FahrenheitToCelcius()"
+        >
+          Convert
+        </button>
+
+        <h4>Here is your conversion :</h4>
+        <label for="Temperature" id="Temperature_label">Results :</label>
+        <input type="text" name="Temperature2" id="Temperature2" />
+      </form>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
